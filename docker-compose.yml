@@ -1,0 +1,21 @@
+services:
+  vaultboard:
+    build: .
+    container_name: vaultboard
+    restart: unless-stopped
+    ports:
+      - "${VAULTBOARD_PORT:-3001}:3001"
+    environment:
+      NODE_ENV: production
+      PORT: 3001
+      DATABASE_PATH: /app/data/vaultboard.db
+      ALLOW_REGISTRATION: "${ALLOW_REGISTRATION:-false}"
+      TRUST_PROXY: "${TRUST_PROXY:-false}"
+    volumes:
+      - vaultboard-data:/app/data
+    security_opt:
+      - no-new-privileges:true
+
+volumes:
+  vaultboard-data:
+    name: vaultboard-data

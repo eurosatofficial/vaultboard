@@ -1,0 +1,14 @@
+node_modules
+dist
+dist-server
+data
+.git
+.env
+work
+outputs
+coverage
+*.db
+*.db-shm
+*.db-wal
+npm-debug.log*
+pnpm-debug.log*
