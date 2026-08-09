@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/screenshots/overview.png" alt="Vaultboard Overview" width="800">
+</p>
+
 # Vaultboard
 
 Vaultboard is a private, self-hosted infrastructure dashboard for organizing servers, services, endpoints, tags, categories, and operational notes. It runs as a single container and stores everything in a local SQLite database.
