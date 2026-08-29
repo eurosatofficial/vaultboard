@@ -123,4 +123,4 @@ The server automatically creates its schema and indexes at startup. Product reco
 
 ## License
 
-No license has been selected. Add the license appropriate for your deployment or distribution before publishing the repository.
+MIT License
